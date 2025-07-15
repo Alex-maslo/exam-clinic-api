@@ -12,7 +12,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         type: 'postgres',
         url: configService.get<string>('DATABASE_URL'),
         autoLoadEntities: true,
-        synchronize: true, // ❗ тільки для dev, вимкни в проді
+        synchronize: true,
       }),
     }),
   ],
