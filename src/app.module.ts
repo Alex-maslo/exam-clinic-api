@@ -6,6 +6,7 @@ import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { NeonDbModule } from './neon-db.module';
 import { TokensModule } from './tokens/tokens.module';
+import { HealthModule } from './health/health.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { TokensModule } from './tokens/tokens.module';
     AuthModule,
     NeonDbModule,
     TokensModule,
+    HealthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
